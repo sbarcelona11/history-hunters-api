@@ -12,6 +12,6 @@ COPY . .
 # Build the app
 #RUN npm run build
 # Run the app
-EXPOSE 3000
+EXPOSE 4000
 # Run the app
 RUN npm run start:dev

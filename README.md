@@ -15,15 +15,25 @@ Este API Rest fue construido para poder trabajar sobre la letra del obligatorio 
 
 ### Uso
 Una ves que la aplicacion este corriendo, podremos consumir la informacion de los diferents endpoints.
-La documentacion para este API Rest, esta contenida en archivo ```Canotaje API postman_collection.json``` el cual tienen que importar dentro de Postman.
+La documentacion para este API Rest, esta contenida en archivo ```History Hunter API.postman_collection.json``` el cual tienen que importar dentro de Postman.
 Cada endpoint tiene un ejemplo de uso dentro.
 
-### AWS
+### Docker
+Para correr la aplicacion en un contenedor de Docker, se debe ejecutar el siguiente comando:
+```docker build -t ctc .```  
+```docker run -p 4000:4000 ctc```
+
+### Docker-compose
+Para correr la aplicacion en un contenedor de Docker, se debe ejecutar el siguiente comando:
+```docker-compose up```
+
+### Deploy on AWS
 ```pm2 start npm --name "ctc" -- start```  
 ```pm2 stop```  
 ```pm2 logs```  
 ```pm2 status```
 
+### Deploy on 
 
 
 
