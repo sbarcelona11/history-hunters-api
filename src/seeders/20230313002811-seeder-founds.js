@@ -102,7 +102,7 @@ module.exports = {
             date: "2023-06-15",
             images: JSON.stringify([
               {
-                url: "https://scontent.fmvd1-1.fna.fbcdn.net/v/t45.5328-4/423905215_7230404743708875_3704515622719266129_n.jpg?stp=dst-jpg_p960x960&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=anNn-M9vcbwAX98iGN6&_nc_ht=scontent.fmvd1-1.fna&oh=00_AfAuXPVTchyZG6dzM9KtOqvunO1UHdyWrw0mI_Dw7bR_bw&oe=65D6F826"
+                url: "https://cloud10.todocoleccion.online/antiguedades/tc/2022/11/04/14/372402564.jpg"
               },
             ]),
             type: "Cotidianos",
@@ -120,7 +120,7 @@ module.exports = {
             date: "2023-06-15",
             images: JSON.stringify([
               {
-                url: "https://scontent.fmvd1-1.fna.fbcdn.net/v/t39.30808-6/295525296_710641983347207_1016462951496201802_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=sskY6GPq0K0AX8mAH1L&_nc_ht=scontent.fmvd1-1.fna&oh=00_AfCEX3aQR-01fCAFfG6ttmpSaMbZkt7Z_Mmb_SuhFzb23w&oe=65D6EB3E"
+                url: "https://laanticuaria.cl/cdn/shop/files/734_1024x1024.jpg?v=1684158291"
               },
             ]),
             type: "Cotidianos",
