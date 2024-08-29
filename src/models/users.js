@@ -7,10 +7,6 @@ module.exports = (sequelize, DataTypes) => {
     class Users extends Model {
         static associate(models) {
             // define association here
-            this.hasMany(models.Place, {as: "places", foreignKey: "userId"});
-            this.hasMany(models.Found, {as: "founds", foreignKey: "userId"});
-            this.hasMany(models.Comment, {as: "comments", foreignKey: "userId"});
-            this.hasMany(models.Review, {as: "reviews", foreignKey: "userId"});
         }
     }
 

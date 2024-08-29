@@ -2,12 +2,9 @@ import express from 'express';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import db from './src/config/db.js';
-import userRouter from './src/routes/users.js';
-import placesRouter from './src/routes/places.js';
-import foundRouter from './src/routes/founds.js';
-import commentsRouter from './src/routes/comments.js';
-import reviewsRouter from './src/routes/reviews.js';
-import favoritesRouter from './src/routes/favorites.js';
+import userRouter from './src/routes/users';
+import productRouter from './src/routes/products';
+import restaurantsRouter from './src/routes/restaurants';
 
 const app = express();
 
@@ -32,16 +29,10 @@ app.get('/', async (req, res) => {
 
 // User routes
 app.use('/users', userRouter);
-// Places routes
-app.use('/places', placesRouter);
-// Objects routes©
-app.use('/founds', foundRouter);
-// Comments routes
-app.use('/comments', commentsRouter);
-// Reviews routes
-app.use('/reviews', reviewsRouter);
-// Reviews routes
-app.use('/favorites', favoritesRouter);
+// Products routes
+app.use('/products', productRouter);
+// Restaurants routes
+app.use('/restaurants', restaurantsRouter);
 
 db.sequelize.sync().then(() => {
     console.log('Connection to the database successful!');

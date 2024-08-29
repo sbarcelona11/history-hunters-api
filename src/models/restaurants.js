@@ -4,37 +4,23 @@ const {
 } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-    class Founds extends Model {
+    class Restaurants extends Model {
         static associate(models) {
             // define association here
-            this.belongsTo(models.User, {as: "users", foreignKey: "userId"});
-            this.belongsTo(models.Place, {as: "places", foreignKey: "placeId"});
         }
     }
 
-    Founds.init(
+    Restaurants.init(
         {
             name: {
                 type: DataTypes.STRING,
-                allowNull: false,
+                allowNull: true,
+            },
+            address: {
+                type: DataTypes.STRING,
+                allowNull: true,
             },
             description: {
-                type: DataTypes.STRING,
-                allowNull: true,
-            },
-            date: {
-                type: DataTypes.DATE,
-                allowNull: true,
-            },
-            images: {
-                type: DataTypes.JSON,
-                allowNull: true,
-            },
-            type: {
-                type: DataTypes.STRING,
-                allowNull: true,
-            },
-            region: {
                 type: DataTypes.STRING,
                 allowNull: true,
             },
@@ -49,10 +35,10 @@ module.exports = (sequelize, DataTypes) => {
         },
         {
             sequelize,
-            modelName: "Found",
+            modelName: "Restaurants",
             timestamps: true,
             underscored: false,
         }
     );
-    return Founds;
+    return Restaurants;
 };
